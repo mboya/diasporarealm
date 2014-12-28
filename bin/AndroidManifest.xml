@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fruit.diasporarealm"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="fruit.diasporarealm.Login"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="fruit.diasporarealm.Home"
+            android:label="@string/title_activity_home" >
+        </activity>
+        <activity
+            android:name="fruit.diasporarealm.SignUp"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+        <activity
+            android:name="fruit.diasporarealm.NextOfKin"
+            android:label="@string/title_activity_next_of_kin" >
+        </activity>
+        <activity
+            android:name="fruit.diasporarealm.EmbassyConsulate"
+            android:label="@string/title_activity_embassy_consulate" >
+        </activity>
+        <activity
+            android:name="fruit.diasporarealm.ReportProblem"
+            android:label="@string/title_activity_report_problem" >
+        </activity>
+        <activity
+            android:name="fruit.diasporarealm.EmbassyList"
+            android:label="@string/title_activity_embassy_list" >
+        </activity>
+        <activity
+            android:name="fruit.diasporarealm.ConsulateList"
+            android:label="@string/title_activity_consulate_list" >
+        </activity>
+        <activity
+            android:name="fruit.diasporarealm.ClosestEmbassyConsulate"
+            android:label="@string/title_activity_closest_embassy_consulate" >
+        </activity>
+        <activity
+            android:name="fruit.diasporarealm.SingleItem"
+            android:label="@string/title_activity_embassies_single_item" >
+        </activity>
+        <activity
+            android:name="fruit.diasporarealm.WriteMessage"
+            android:label="@string/title_activity_write_message" >
+        </activity>
+        <activity
+            android:name="fruit.diasporarealm.RecordMessage"
+            android:label="@string/title_activity_record_message" >
+        </activity>
+        <activity
+            android:name="fruit.diasporarealm.CitizensPerCountryList"
+            android:label="@string/title_activity_citizens_per_country_list" >
+        </activity>
+        <activity
+            android:name="fruit.diasporarealm.CitizensList"
+            android:label="@string/title_activity_citizens_list" >
+        </activity>
+    </application>
+
+</manifest>

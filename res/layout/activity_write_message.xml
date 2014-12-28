@@ -1,0 +1,52 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/message_fullnames_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/full_names" >
+
+            <requestFocus />
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/message_email_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/message_content_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/message_content"
+            android:inputType="textMultiLine" >
+        </EditText>
+
+        <ImageButton
+            android:contentDescription="@string/content_description"
+            android:id="@+id/message_send_imageButton"
+            style="@style/TextAppearance.AppCompat.Base.Widget.PopupMenu.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_send" />
+
+    </LinearLayout>
+
+</ScrollView>
